@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.status(200).json({ msg: "Welcome Embc API from Express" });
+  res.status(200).json({ msg: "Welcome embc API from Express!" });
 });
 app.use("/home", homeRouter);
 app.use("/business", businessRouter);
